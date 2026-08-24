@@ -32,6 +32,8 @@ The file manager provides a graphical interface for managing files on Sagehen wi
 3. Choose a file from your local computer
 4. Click **Start Upload** and wait for the progress bar to complete
 
+![The file manager in your home directory, with the Upload button in the toolbar.](fig/04-files-app-upload-button.png){alt='The Pomona College OnDemand Files app showing the home directory. A toolbar across the top offers Open in Terminal, Refresh, New File, New Directory, Upload, Download, Copy Move, and Delete. The listing includes folders such as code, data, and projects plus several slurm output files.'}
+
 ### Multiple File Upload
 
 1. Click the **Upload** button
@@ -48,7 +50,7 @@ The file manager provides a graphical interface for managing files on Sagehen wi
 
 ## Downloading Files
 
-1. Right-click the file and select **Download**, or click the file and use the toolbar **Download** button
+1. Open the file's dropdown menu (⋮) and select **Download**, or click the file and use the toolbar **Download** button
 2. For multiple files, select them with checkboxes, then click **Download Selected** -- they arrive as a ZIP archive
 3. Downloads go to your browser's default Downloads folder
 
@@ -56,23 +58,27 @@ The file manager provides a graphical interface for managing files on Sagehen wi
 
 ### Creating Directories
 
-1. Click **New Folder** or **Create Directory**
+1. Click **New Directory**
 2. Enter a name (e.g., "analysis_2026")
 3. Click **Create**
 
+![The New Directory dialog — type a name and click OK.](fig/04-new-directory-dialog.png){alt='A modal dialog titled New Directory over the OnDemand file manager, containing a single Directory name input field and two buttons, Close and OK.'}
+
 ### Renaming
 
-1. Right-click the file and select **Rename**
+1. Open the file's dropdown menu (⋮) and select **Rename**
 2. Enter the new name and press Enter
+
+![Each file's dropdown menu (⋮) offers View, Edit, Rename, Download, and Delete.](fig/04-file-context-menu.png){alt='A cropped view of the OnDemand file listing with one file selected and its dropdown menu open, showing five actions: View, Edit, Rename, Download, and a red Delete option.'}
 
 ### Moving Files
 
-1. Select the file(s), right-click, and choose **Move** -- then navigate to the destination
-2. Or use right-click > **Cut**, navigate, then right-click > **Paste**
+1. Select the file(s), use the file's dropdown menu (⋮), and choose **Move** -- then navigate to the destination
+2. Or use the file's dropdown menu (⋮) > **Cut**, navigate, then use the file's dropdown menu (⋮) > **Paste**
 
 ### Deleting
 
-1. Right-click the file or folder and select **Delete**
+1. Open the dropdown menu (⋮) for the file or folder and select **Delete**
 2. Confirm the deletion -- verify you have backups before deleting important data
 
 ## Inline Text Editing
@@ -87,7 +93,7 @@ For files larger than 10 MB, use a command-line editor in the Web Terminal inste
 
 ## Managing Permissions
 
-1. Right-click a file and select **Properties** or **Permissions**
+1. Use the file's dropdown menu (⋮) a file and select **Properties** or **Permissions**
 2. View current permissions (e.g., `-rw-r--r--`)
 3. Adjust read/write/execute for owner, group, and others
 
@@ -117,7 +123,7 @@ Then check: How much storage are you currently using? Is your quota close to the
 
 :::::::::::::::::::::::::::::::: solution
 
-1. Your sample_data.txt uploads to /bigdata (typically /bigdata/labname)
+1. Your sample_data.txt uploads to /bigdata (typically `/bigdata/lab/<labname>`)
 2. The new directory "project_2026" appears immediately
 3. Moving the file into the subdirectory works via drag or cut/paste
 4. Downloading returns the original file content intact
@@ -141,3 +147,6 @@ Common observations:
 - File permissions can be viewed and changed through the web interface
 - Monitor your quota regularly with quota_check.sh or Accounts > Usage
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
+<script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>

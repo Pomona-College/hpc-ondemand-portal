@@ -11,7 +11,7 @@
 ### Main Menu Items
 
 **Files**
-- Home Directory: Your /rhome/username
+- Home Directory: Your `/rhome/<myusername>`
 - bigdata: Group research storage
 - scratch: Temporary fast storage
 - tmpfs: In-memory storage (for jobs)
@@ -92,7 +92,6 @@ module unload name # Remove module
 ### GPU Types
 - **A100**: 80 GB, for large models
 - **L40S**: 48 GB, for deep learning
-- **V100**: 16 GB, for research-scale work
 
 ### Job Limits
 - Max time: 720 hours (30 days)
@@ -138,8 +137,8 @@ module unload name # Remove module
 
 ### From Command Line
 ```
-scp local_file username@sagehen.hpc.pomona.edu:/remote/path
-scp username@sagehen.hpc.pomona.edu:/remote/file local_path
+scp local_file <myusername>@sagehen.hpc.pomona.edu:/remote/path
+scp <myusername>@sagehen.hpc.pomona.edu:/remote/file local_path
 ```
 
 ## OnDemand Features Quick Reference
@@ -169,7 +168,7 @@ Use in web terminal: `chmod 755 /path/to/file`
 
 ### "File not found" error
 - Check file path is correct
-- Use absolute path: `/rhome/username/file` not `~/file`
+- Use absolute path: `/rhome/<myusername>/file` not `~/file`
 - Verify file exists in file manager before trying to open
 - Check spelling and capitalization
 
@@ -181,8 +180,8 @@ Use in web terminal: `chmod 755 /path/to/file`
 
 ### Module not found (in Web Terminal)
 - Check correct module name: `module avail`
-- Some modules need version: `module load python/3.11`
-- Load module before running commands: `module load python` then `python script.py`
+- Some modules need a version: `module load cuda/12.2.1`
+- Load the module before running commands: `module load miniconda3` then `python script.py` (there is no standalone `python` module -- Python comes from miniconda3/anaconda3)
 
 ### Quota exceeded
 - Check usage in Accounts → Usage
@@ -221,7 +220,7 @@ Use in web terminal: `chmod 755 /path/to/file`
 
 | Where to Store | What | Duration | Backed Up |
 |----------------|------|----------|-----------|
-| /rhome/user | Personal files, code | Permanent | Yes |
+| `/rhome/<myusername>` | Personal files, code | Permanent | Yes |
 | /bigdata/lab | Research data, collaboration | Permanent | Yes |
 | /scratch/job_id | Temporary job files | 60 days | No |
 | /tmpfs/job_id | Fast temporary data | During job only | No |
@@ -229,9 +228,9 @@ Use in web terminal: `chmod 755 /path/to/file`
 ## Getting Help
 
 - **OnDemand Help**: Click "?" icon in top right navigation
-- **Documentation**: https://hpc.pomona.edu/wiki/
+- **Documentation**: https://www.pomona.edu/its/
 - **Email Support**: its-hpc@pomona.edu
-- **In-person Help**: HPC office hours (see https://hpc.pomona.edu/)
+- **In-person Help**: HPC office hours (see https://www.pomona.edu/its/)
 
 ## Tips for Success
 
@@ -249,7 +248,7 @@ Use in web terminal: `chmod 755 /path/to/file`
 2. Click Files → Home Directory
 3. Upload a test file using Upload button
 4. Go to Interactive Apps → Web Terminal
-5. In terminal, type: cd /rhome/username && ls
+5. In terminal, type: cd `/rhome/<myusername>` && ls
 6. You see your uploaded file
 7. Go to Interactive Apps → Jupyter Notebook
 8. Click Launch and wait for notebook to start
@@ -257,3 +256,6 @@ Use in web terminal: `chmod 755 /path/to/file`
 10. Run the cell with Shift+Enter
 
 Congratulations - you've used all the main OnDemand features!
+
+<!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
+<script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>

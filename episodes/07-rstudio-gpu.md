@@ -39,16 +39,27 @@ Once launched, RStudio provides four panels:
 
 Write code in the script editor or directly in the console:
 
+First create a small sample file to work with, then read it back, summarize,
+and plot (in real work you would read your own data from
+`/bigdata/lab/<labname>/` instead):
+
 ```r
 library(tidyverse)
 
-df <- read.csv("/bigdata/labname/data.csv")
+# Create a small sample dataset in your home directory
+dir.create("~/rstudio-demo", showWarnings = FALSE)
+write.csv(data.frame(variable1 = rnorm(8), variable2 = rnorm(8)),
+          "~/rstudio-demo/data.csv", row.names = FALSE)
+
+df <- read.csv("~/rstudio-demo/data.csv")
 summary(df)
 
 ggplot(df, aes(x = variable1, y = variable2)) +
   geom_point() +
   theme_minimal()
 ```
+
+![A working version of the example: write a small sample CSV first, then read, summarize, and plot it — all four RStudio panes in action.](fig/07-rstudio-run-sample-script.png){alt='The four-panel RStudio Server interface. The editor and console show R code writing an eight-row sample CSV to the home directory, loading tidyverse, reading the file back, and printing a summary. The Plots pane displays a scatter plot and the Environment pane lists a data frame of 8 observations of 2 variables.'}
 
 ### Installing R Packages
 
@@ -72,7 +83,7 @@ Interactive sessions have time limits. Save scripts and results frequently with 
 
 When launching Jupyter or RStudio, select GPU options in the resource form:
 
-- **GPU type**: A100 (80 GB), L40S (48 GB), or V100 (16 GB)
+- **GPU type**: A100 (80 GB) or L40S (48 GB)
 - **GPU count**: Usually 1 for interactive work
 - **Partition**: Select `gpu` to access GPU nodes
 
@@ -138,6 +149,8 @@ Monitor GPU usage from a terminal with `nvidia-smi`.
 
 :::::::::::::::::::::::::::::::: solution
 
+![The expected challenge result: 100 random points colored by group, with the data frame in the Environment pane.](fig/07-rstudio-challenge-scatter.png){alt='RStudio Server showing the challenge solution. The console echoes code creating a 100-row data frame with x, y, and a two-level group column. The Plots pane displays a chart titled Sample Scatter Plot with points in two colors for groups A and B, and the Environment pane confirms 100 observations of 3 variables.'}
+
 1. RStudio launches after resource allocation (1--5 minutes)
 2. tidyverse loads with some startup messages (this is normal)
 3. The data frame appears in the Environment panel showing 100 observations of 3 variables
@@ -154,7 +167,10 @@ If tidyverse is not installed, run `install.packages("tidyverse")` first -- this
 - Launch RStudio from Interactive Apps with configurable resources
 - RStudio provides script editor, console, environment, and files/plots panels
 - Install R packages from the console or the Packages tab
-- Request GPU resources by selecting the gpu partition and GPU type (A100, L40S, V100)
+- Request GPU resources by selecting the gpu partition and GPU type (A100, L40S, RTX PRO 6000)
 - Verify GPU access with torch.cuda.is_available() in Python or tf in R
 - Save your work frequently -- sessions have time limits
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
+<script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>

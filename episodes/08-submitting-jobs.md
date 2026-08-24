@@ -65,7 +65,7 @@ A basic batch script:
 #SBATCH --error=job.err
 
 cd $SLURM_SUBMIT_DIR
-module load python/3.11
+module load miniconda3
 python3 analysis.py
 ```
 
@@ -84,12 +84,12 @@ To request GPU resources, use the `gpu` partition with `--gres`:
 #SBATCH --time=04:00:00
 #SBATCH --output=gpu_job.log
 
-module load cuda/12.1
-module load pytorch
+module load miniconda3 cuda/12.2.1
+conda activate pytorch_env   # your conda env with PyTorch (see the ML workshop)
 python3 train_model.py
 ```
 
-Request a specific GPU type with `--gres=gpu:a100:1`, `--gres=gpu:l40s:1`, or `--gres=gpu:v100:1`.
+Request a specific GPU type with `--gres=gpu:a100:1`, `--gres=gpu:l40s:1`, or `--gres=gpu:rtxpro6000:1`.
 
 ## Job Arrays
 
@@ -129,6 +129,7 @@ Each array task gets a unique `$SLURM_ARRAY_TASK_ID` (1 through 10 in this examp
 5. Job ID is a unique number assigned by SLURM
 
 Common observations:
+
 - Queue time varies based on cluster load
 - Output appears in the log file after job completion
 - The `amd` and `gpu` partitions each allow jobs up to 30 days (720 hours); the `short` partition has a shorter max walltime — check `sinfo -p short` for the current limit

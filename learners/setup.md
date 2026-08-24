@@ -9,6 +9,7 @@ title: Setup
 ### System Requirements
 
 You need:
+
 - **Web browser**: Chrome, Firefox, Edge, or Safari (recent version recommended - updated within last 6 months)
 - **Internet connection**: Stable, broadband recommended (minimum 2 Mbps for file uploads)
 - **Pomona College account**: Active @pomona.edu email and password
@@ -123,7 +124,7 @@ If any item is unchecked, troubleshoot before the workshop (see Troubleshooting 
 | "Authentication failed" | Verify Pomona username (not email). Try password reset at https://duo.pomona.edu |
 | DUO request appears but I don't approve it | Deny the request. Try logging in again. If repeated denials, contact its-hpc@pomona.edu |
 | Browser shows "Connection refused" or similar | Check internet connection. Try different browser. Clear cache (Ctrl+Shift+Delete) |
-| "Connection timed out" | Try again later. OnDemand may be under maintenance. Check https://hpc.pomona.edu/wiki/ for status |
+| "Connection timed out" | Try again later. OnDemand may be under maintenance. Check https://www.pomona.edu/its/ for status |
 | OnDemand loads but is very slow | This is normal during peak hours (9am-5pm weekdays). Try again in evening or early morning |
 | Can't find OnDemand URL or it's blocked | Contact your network admin if on institutional network. You may need VPN if off-campus |
 
@@ -153,6 +154,6 @@ Include in your email:
 
 Email: its-hpc@pomona.edu
 Instructor: Consult workshop schedule
-Documentation: https://hpc.pomona.edu/wiki/
+Documentation: https://www.pomona.edu/its/
 
 Welcome to the workshop!

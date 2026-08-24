@@ -327,7 +327,7 @@ Ask about:
 
 ### Helpful References
 - OnDemand Help: Built-in ? icon
-- Sagehen Docs: https://hpc.pomona.edu/wiki/
+- Sagehen Docs: https://www.pomona.edu/its/
 - SLURM Docs: https://slurm.schedmd.com/
 - Carpentries HPC: https://carpentries-incubator.github.io/hpc-intro/
 
