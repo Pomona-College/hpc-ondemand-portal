@@ -1,0 +1,32 @@
+---
+carpentry: 'incubator'
+title: 'OnDemand Portal Orientation — Pomona College HPC Workshop Series'
+created: '2026-03-05'
+license: 'CC-BY 4.0'
+source: 'https://github.com/Pomona-College/hpc-ondemand-portal'
+url: 'https://pomona-college.github.io/hpc-ondemand-portal/'
+contact: 'its-hpc@pomona.edu'
+description: 'Using the Open OnDemand web portal for Sagehen: file management, browser shells, and interactive Jupyter and RStudio sessions.'
+branch: 'main'
+life_cycle: 'stable'
+keywords: 'Pomona College, HPC, research computing, ondemand, web-interface, sagehen, file-management, jupyter, rstudio, job-submission'
+episodes:
+- 01-what-is-ondemand.md
+- 02-logging-in.md
+- 03-navigating-storage.md
+- 04-file-operations.md
+- 05-shell-access.md
+- 06-jupyter-notebooks.md
+- 07-rstudio-gpu.md
+- 08-submitting-jobs.md
+- 09-monitoring-troubleshooting.md
+
+learners:
+- setup.md
+- reference.md
+
+instructors:
+- instructor-notes.md
+
+profiles:
+- learner-profiles.md
