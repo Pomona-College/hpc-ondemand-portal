@@ -145,7 +145,7 @@ Include in your email:
 
 ## Notes for This Workshop
 
-- **Duration**: 2.5 hours
+- **Duration**: about 3.5 hours
 - **Level**: No prior HPC or command-line experience needed
 - **Format**: Interactive hands-on with live demonstrations
 - **Outcome**: You'll be comfortable using OnDemand for file management, running interactive applications, and submitting jobs
