@@ -5,7 +5,7 @@ exercises: 5
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
-- What storage locations are available on Sagehen?
+- What storage locations are available on Sagehen HPC?
 - How do /rhome and /bigdata differ from /scratch and /tmpfs?
 - What are the capacity limits for each storage location?
 - When should you use each storage location?
@@ -18,7 +18,7 @@ exercises: 5
 - Check storage quotas using quota_check.sh
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Storage Locations on Sagehen
+## Storage Locations on Sagehen HPC
 
 Sagehen provides four storage locations, each designed for different use cases. Access them through the **Files** menu in the left navigation.
 

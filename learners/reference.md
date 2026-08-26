@@ -33,7 +33,7 @@
 - Profile: Account settings
 
 **Clusters**
-- Sagehen Shell Access: Web terminal
+- Sagehen HPC Shell Access: Web terminal
 
 ## Common Commands in Web Terminal
 
@@ -82,7 +82,7 @@ module unload name # Remove module
 | /scratch | Large | Temp files | No |
 | /tmpfs | 256 GB | RAM disk | No |
 
-## Sagehen Cluster Information
+## Sagehen HPC Cluster Information
 
 ### Partitions
 - **normal**: General purpose computing (default)

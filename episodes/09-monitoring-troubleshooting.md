@@ -83,7 +83,7 @@ You can also cancel from the Web Terminal with `scancel <job_id>`.
 
 ## Job Constraints and Limits
 
-Sagehen enforces limits for fair resource sharing:
+Sagehen HPC enforces limits for fair resource sharing:
 
 - **Time**: Max 720 hours (30 days) per job on `amd` and `gpu` partitions; the `short` partition has a shorter max walltime — check `sinfo -p short`
 - **GPU limit**: GPU usage limits per user are configured in SLURM; check `sacctmgr show user $USER` or contact its-hpc@pomona.edu for current limits.

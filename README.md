@@ -36,7 +36,7 @@ After completing this workshop, learners will be able to:
 
 ## Target Audience
 
-Researchers new to HPC who prefer graphical interfaces, or anyone wanting to access Sagehen resources without SSH knowledge. Particularly useful for desktop/tablet users and those unfamiliar with command-line tools.
+Researchers new to HPC who prefer graphical interfaces, or anyone wanting to access Sagehen HPC resources without SSH knowledge. Particularly useful for desktop/tablet users and those unfamiliar with command-line tools.
 
 ## Duration
 

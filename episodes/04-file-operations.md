@@ -5,7 +5,7 @@ exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
-- How do you upload files to Sagehen through OnDemand?
+- How do you upload files to Sagehen HPC through OnDemand?
 - How do you download files back to your local computer?
 - How do you create, rename, move, and delete files?
 - Can you edit files directly in the browser?

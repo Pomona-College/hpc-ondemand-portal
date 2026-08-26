@@ -52,7 +52,7 @@ Click the hamburger menu to reveal the main navigation:
 - **Jobs** -- Active Jobs, Job Composer, Cluster
 - **Accounts** -- Usage, Profile
 - **Interactive Apps** -- Jupyter Notebook, RStudio, Web Terminal
-- **Clusters** -- Sagehen Shell Access
+- **Clusters** -- Sagehen HPC Shell Access
 
 ## Status Indicators
 
