@@ -32,6 +32,8 @@ exercises: 10
 6. Click **Connect to Jupyter** when the session is ready
 
 ::::::::::::::::::::::::::::::::::::: callout
+![The launch form is where you choose a partition and ask for resources -- the same decisions as an sbatch script, as a web form.](fig/jupyter-launch-form.png){alt='The Jupyter Notebook launch form in OnDemand. Fields include Pom Partitions set to amd, with notes that amd is the default partition allowing up to 720 hours per job, gpu is the GPU partition also allowing 720 hours, and short is limited to 2 hours but starts with little or no wait. Below are number of hours, Jupyter version 4.4.0, Jupyter type lab, number of CPU cores, memory in gigabytes, an email checkbox, and a Launch button.'}
+
 ## First Launch Takes Time
 
 When you request Jupyter, expect to wait 1--5 minutes for resource allocation, especially during busy hours. The system is requesting compute nodes for your session. Subsequent launches typically start faster.

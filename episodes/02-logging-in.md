@@ -27,6 +27,8 @@ exercises: 5
 
 After authentication, your session persists for several hours. Your browser maintains the connection, allowing seamless navigation between sections.
 
+![The Pomona College single sign-on page that OnDemand hands you off to.](fig/ondemand-login.jpg){alt='The Pomona College sign-in page shown on a photograph of campus. A dialogue box asks for username@pomona.edu or username@mymail.pomona.edu, with a Next button, a link for people who cannot access their account, and a sign-in options link.'}
+
 ## Dashboard Layout
 
 ### Top Navigation Bar
@@ -53,6 +55,8 @@ Click the hamburger menu to reveal the main navigation:
 - **Accounts** -- Usage, Profile
 - **Interactive Apps** -- Jupyter Notebook, RStudio, Web Terminal
 - **Clusters** -- Sagehen HPC Shell Access
+
+![The dashboard you land on: pinned apps grouped into Clusters, Files and Interactive Apps.](fig/ondemand-dashboard.png){alt='The Pomona College OnDemand dashboard. A top menu bar offers Apps, Files, Jobs, Clusters and Interactive Apps. The page below shows pinned apps grouped under three headings: Clusters, containing Pomona Cluster Shell Access and System Status; Files, containing Home Directory; and Interactive Apps.'}
 
 ## Status Indicators
 
