@@ -390,7 +390,7 @@
         
 <section id="aio-01-what-is-ondemand"><p>Content from <a href="01-what-is-ondemand.html">What is OnDemand?</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/01-what-is-ondemand.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -473,7 +473,9 @@ command-line tools. Point, click, and go!</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="ondemand-vs-ssh-access">OnDemand vs SSH Access<a class="anchor" aria-label="anchor" href="#ondemand-vs-ssh-access"></a>
+<figure><img src="../fig/interactive-apps-menu.png" alt="The Interactive Apps dropdown menu open on the OnDemand dashboard. It lists a Desktop entry, then a GUIs group containing Autodock Vina, Comsol, Cryosparc, Gaussian, MATLAB, Mathematica, Qgis, Schrodinger, Stata and Tycho, then a Servers group containing Jupyter Notebook and RStudio Server." class="figure mx-auto d-block"><div class="figcaption">Everything OnDemand can launch, in one
+menu.</div>
+</figure></section><section><h2 class="section-heading" id="ondemand-vs-ssh-access">OnDemand vs SSH Access<a class="anchor" aria-label="anchor" href="#ondemand-vs-ssh-access"></a>
 </h2>
 <hr class="half-width">
 <p>While SSH remains powerful for advanced users, OnDemand complements
@@ -597,7 +599,7 @@ processing</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There is no single correct answer, but common answers include: -
 <strong>File management</strong>: OnDemand is superior for uploading
@@ -642,7 +644,7 @@ job monitoring</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-02-logging-in"><p>Content from <a href="02-logging-in.html">Logging In and Dashboard Overview</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/02-logging-in.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -694,7 +696,9 @@ job monitoring</li>
 <p>After authentication, your session persists for several hours. Your
 browser maintains the connection, allowing seamless navigation between
 sections.</p>
-</section><section><h2 class="section-heading" id="dashboard-layout">Dashboard Layout<a class="anchor" aria-label="anchor" href="#dashboard-layout"></a>
+<figure><img src="../fig/ondemand-login.jpg" alt="The Pomona College sign-in page shown on a photograph of campus. A dialogue box asks for username@pomona.edu or username@mymail.pomona.edu, with a Next button, a link for people who cannot access their account, and a sign-in options link." class="figure mx-auto d-block"><div class="figcaption">The Pomona College single sign-on page that
+OnDemand hands you off to.</div>
+</figure></section><section><h2 class="section-heading" id="dashboard-layout">Dashboard Layout<a class="anchor" aria-label="anchor" href="#dashboard-layout"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -746,8 +750,11 @@ tmpfs</li>
 <strong>Interactive Apps</strong> – Jupyter Notebook, RStudio, Web
 Terminal</li>
 <li>
-<strong>Clusters</strong> – Sagehen Shell Access</li>
+<strong>Clusters</strong> – Sagehen HPC Shell Access</li>
 </ul>
+<figure><img src="../fig/ondemand-dashboard.png" alt="The Pomona College OnDemand dashboard. A top menu bar offers Apps, Files, Jobs, Clusters and Interactive Apps. The page below shows pinned apps grouped under three headings: Clusters, containing Pomona Cluster Shell Access and System Status; Files, containing Home Directory; and Interactive Apps." class="figure mx-auto d-block"><div class="figcaption">The dashboard you land on: pinned apps grouped
+into Clusters, Files and Interactive Apps.</div>
+</figure>
 </div>
 </section><section><h2 class="section-heading" id="status-indicators">Status Indicators<a class="anchor" aria-label="anchor" href="#status-indicators"></a>
 </h2>
@@ -855,7 +862,7 @@ Clusters</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-03-navigating-storage"><p>Content from <a href="03-navigating-storage.html">Navigating Storage Locations</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/03-navigating-storage.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -870,7 +877,7 @@ Clusters</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What storage locations are available on Sagehen?</li>
+<li>What storage locations are available on Sagehen HPC?</li>
 <li>How do /rhome and /bigdata differ from /scratch and /tmpfs?</li>
 <li>What are the capacity limits for each storage location?</li>
 <li>When should you use each storage location?</li>
@@ -893,7 +900,7 @@ Clusters</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="storage-locations-on-sagehen">Storage Locations on Sagehen<a class="anchor" aria-label="anchor" href="#storage-locations-on-sagehen"></a>
+<section><h2 class="section-heading" id="storage-locations-on-sagehen-hpc">Storage Locations on Sagehen HPC<a class="anchor" aria-label="anchor" href="#storage-locations-on-sagehen-hpc"></a>
 </h2>
 <hr class="half-width">
 <p>Sagehen provides four storage locations, each designed for different
@@ -1131,7 +1138,7 @@ sharing</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-04-file-operations"><p>Content from <a href="04-file-operations.html">Uploading, Downloading, and Editing Files</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/04-file-operations.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -1146,7 +1153,7 @@ sharing</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you upload files to Sagehen through OnDemand?</li>
+<li>How do you upload files to Sagehen HPC through OnDemand?</li>
 <li>How do you download files back to your local computer?</li>
 <li>How do you create, rename, move, and delete files?</li>
 <li>Can you edit files directly in the browser?</li>
@@ -1352,7 +1359,7 @@ close to the 1 TB limit?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Your sample_data.txt uploads to /bigdata (typically
@@ -1398,7 +1405,7 @@ Usage</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-05-shell-access"><p>Content from <a href="05-shell-access.html">Shell Access and Command-Line Computing</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/05-shell-access.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1481,7 +1488,7 @@ browser</li>
 </h3>
 <ol style="list-style-type: decimal">
 <li>Go to Clusters menu</li>
-<li>Select “Sagehen Shell Access”</li>
+<li>Select “Sagehen HPC Shell Access”</li>
 <li>A terminal launches in a new tab</li>
 </ol>
 <p>The terminal takes a few seconds to initialize the first time. Once
@@ -1678,7 +1685,7 @@ with Ctrl+A+D. Reconnect later even after closing your terminal.</p>
 <li>Create a new directory called “my_analysis”</li>
 <li>Create a simple Python script that prints “Hello from Sagehen!”</li>
 <li>Run the Python script from the terminal</li>
-<li>Check the current status of the Sagehen cluster with sinfo</li>
+<li>Check the current status of the Sagehen HPC cluster with sinfo</li>
 <li>View any jobs you have running with squeue -u $USER</li>
 </ol>
 <p>Record what you observe, especially:</p>
@@ -1695,7 +1702,7 @@ with Ctrl+A+D. Reconnect later even after closing your terminal.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>After completing this challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1721,7 +1728,7 @@ partitions</li>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="accessing-sagehen-via-ssh-alternative">Accessing Sagehen via SSH (Alternative)<a class="anchor" aria-label="anchor" href="#accessing-sagehen-via-ssh-alternative"></a>
+</section><section><h2 class="section-heading" id="accessing-sagehen-hpc-via-ssh-alternative">Accessing Sagehen HPC via SSH (Alternative)<a class="anchor" aria-label="anchor" href="#accessing-sagehen-hpc-via-ssh-alternative"></a>
 </h2>
 <hr class="half-width">
 <p>While the Web Terminal is convenient, some users prefer SSH for
@@ -1756,7 +1763,7 @@ advanced users</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-06-jupyter-notebooks"><p>Content from <a href="06-jupyter-notebooks.html">Launching Jupyter Notebooks</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/06-jupyter-notebooks.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -1821,7 +1828,10 @@ computing</li>
 <li>Click <strong>Connect to Jupyter</strong> when the session is
 ready</li>
 </ol>
-<div id="first-launch-takes-time" class="callout">
+<figure><img src="../fig/jupyter-launch-form.png" alt="The Jupyter Notebook launch form in OnDemand. Fields include Pom Partitions set to amd, with notes that amd is the default partition allowing up to 720 hours per job, gpu is the GPU partition also allowing 720 hours, and short is limited to 2 hours but starts with little or no wait. Below are number of hours, Jupyter version 4.4.0, Jupyter type lab, number of CPU cores, memory in gigabytes, an email checkbox, and a Launch button." class="figure mx-auto d-block"><div class="figcaption">The launch form is where you choose a partition
+and ask for resources – the same decisions as an sbatch script, as a web
+form.</div>
+</figure><div id="first-launch-takes-time" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1959,7 +1969,7 @@ and 1 hour</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Jupyter launches after 1–5 minutes of resource allocation</li>
@@ -2288,7 +2298,7 @@ R</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-08-submitting-jobs"><p>Content from <a href="08-submitting-jobs.html">Submitting Batch Jobs</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/08-submitting-jobs.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -2483,7 +2493,7 @@ with one submission.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Your script runs successfully on the compute node</li>
@@ -2522,9 +2532,9 @@ existing file</li>
 locations</li>
 <li>Use –partition=gpu and –gres=gpu:1 for GPU jobs</li>
 <li>Job arrays let you submit many similar jobs with one script</li>
-<li>Sagehen offers three partitions: <code>amd</code>, <code>gpu</code>
-(both with 30-day max walltime), and <code>short</code> (shorter max
-walltime, good for quick test/debug jobs — check
+<li>Sagehen HPC offers three partitions: <code>amd</code>,
+<code>gpu</code> (both with 30-day max walltime), and <code>short</code>
+(shorter max walltime, good for quick test/debug jobs — check
 <code>sinfo -p short</code>)</li>
 </ul>
 </div>
@@ -2532,7 +2542,7 @@ walltime, good for quick test/debug jobs — check
 </div>
 </section></section><section id="aio-09-monitoring-troubleshooting"><p>Content from <a href="09-monitoring-troubleshooting.html">Monitoring Jobs and Troubleshooting</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-ondemand-portal/edit/main/episodes/09-monitoring-troubleshooting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -2691,7 +2701,7 @@ job. Note the status colors: Completed is green, Running is blue.</div>
 </figure></section><section><h2 class="section-heading" id="job-constraints-and-limits">Job Constraints and Limits<a class="anchor" aria-label="anchor" href="#job-constraints-and-limits"></a>
 </h2>
 <hr class="half-width">
-<p>Sagehen enforces limits for fair resource sharing:</p>
+<p>Sagehen HPC enforces limits for fair resource sharing:</p>
 <ul>
 <li>
 <strong>Time</strong>: Max 720 hours (30 days) per job on
@@ -2796,7 +2806,7 @@ python3: can't open file '/bigdata/lab/&lt;labname&gt;/project/run_analysis.py':
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The error shows two problems caused by the same root issue:</p>
 <ol style="list-style-type: decimal">
@@ -2894,8 +2904,8 @@ faster starts</li>
   "url": "https://pomona-college.github.io/hpc-ondemand-portal/instructor/aio.html",
   "identifier": "https://pomona-college.github.io/hpc-ondemand-portal/instructor/aio.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>
