@@ -144,5 +144,5 @@ Common observations:
 - SLURM directives control partition, time, nodes, and output locations
 - Use --partition=gpu and --gres=gpu:1 for GPU jobs
 - Job arrays let you submit many similar jobs with one script
-- Sagehen offers three partitions: `amd`, `gpu` (both with 30-day max walltime), and `short` (shorter max walltime, good for quick test/debug jobs — check `sinfo -p short`)
+- Sagehen HPC offers three partitions: `amd`, `gpu` (both with 30-day max walltime), and `short` (shorter max walltime, good for quick test/debug jobs — check `sinfo -p short`)
 ::::::::::::::::::::::::::::::::::::::::::::::::::

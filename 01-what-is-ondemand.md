@@ -37,6 +37,8 @@ OnDemand provides several advantages over traditional SSH access:
 OnDemand is ideal if you're new to HPC and prefer graphical interfaces. You can accomplish most common tasks without learning command-line tools. Point, click, and go!
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+![Everything OnDemand can launch, in one menu.](fig/interactive-apps-menu.png){alt='The Interactive Apps dropdown menu open on the OnDemand dashboard. It lists a Desktop entry, then a GUIs group containing Autodock Vina, Comsol, Cryosparc, Gaussian, MATLAB, Mathematica, Qgis, Schrodinger, Stata and Tycho, then a Servers group containing Jupyter Notebook and RStudio Server.'}
+
 ## OnDemand vs SSH Access
 
 While SSH remains powerful for advanced users, OnDemand complements it by offering:

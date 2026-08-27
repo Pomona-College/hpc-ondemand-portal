@@ -42,7 +42,7 @@ The Web Terminal connects to a login node, designed for small, quick tasks like 
 ### Method 2: Through Clusters Menu
 
 1. Go to Clusters menu
-2. Select "Sagehen Shell Access"
+2. Select "Sagehen HPC Shell Access"
 3. A terminal launches in a new tab
 
 The terminal takes a few seconds to initialize the first time. Once loaded, you have a fully functional bash shell.
@@ -191,7 +191,7 @@ Use the Web Terminal to complete these tasks:
 2. Create a new directory called "my_analysis"
 3. Create a simple Python script that prints "Hello from Sagehen!"
 4. Run the Python script from the terminal
-5. Check the current status of the Sagehen cluster with sinfo
+5. Check the current status of the Sagehen HPC cluster with sinfo
 6. View any jobs you have running with squeue -u $USER
 
 Record what you observe, especially:
@@ -224,7 +224,7 @@ Common observations:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Accessing Sagehen via SSH (Alternative)
+## Accessing Sagehen HPC via SSH (Alternative)
 
 While the Web Terminal is convenient, some users prefer SSH for direct access:
 
